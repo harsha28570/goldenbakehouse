@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/golden-bake-house/index.html"
+      "destination": "/index.html"
     }
   ]
 }
