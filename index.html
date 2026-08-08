@@ -3,7 +3,204 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Golden Bake House</title>
+    <title>
+      Golden Bake House — Baked With Love Since 2025 | Sathupally's Finest
+      Bakery
+    </title>
+    <meta
+      name="description"
+      content="Golden Bake House — Sathupally's most loved bakery since 2025. Fresh cakes, breads, pastries & custom creations. RTC Bus Stand, Sathupally. Call 092929 88177. Open till 11 PM. 5.0 Google Rating."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,600;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@600;700&family=Josefin+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#FFF8F0",
+              warm: "#FEFAF5",
+              vanilla: "#F5E6C8",
+              caramel: "#C68642",
+              choc: "#3D1A00",
+              berry: "#8B3A52",
+              gold: "#D4A843",
+              cocoa: "#2C1810",
+              rose: "#E8A598",
+              stone: "#8C7A6B",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              body: ["Lora", "serif"],
+              hand: ["Dancing Script", "cursive"],
+              label: ["Josefin Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #fff8f0;
+        color: #3d1a00;
+      }
+      .label {
+        font-family: "Josefin Sans", sans-serif;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 11px;
+      }
+      .hand {
+        font-family: "Dancing Script", cursive;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+      .img-zoom {
+        overflow: hidden;
+      }
+      .img-zoom img {
+        transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .img-zoom:hover img {
+        transform: scale(1.06);
+      }
+      .price {
+        font-family: "Dancing Script", cursive;
+        font-weight: 700;
+        color: #8b3a52;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c68642;
+        border-radius: 999px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f5e6c8;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="antialiased">
+    <!-- NAV -->
+    <header
+      id="nav"
+      class="sticky top-0 z-40 bg-cream/85 backdrop-blur-xl border-b border-caramel/10"
+    >
+      <div
+        class="max-w-[1280px] mx-auto px-4 md:px-6 h-[72px] flex items-center justify-between"
+      >
+        <a href="#" class="flex items-center gap-3">
+          <div
+            class="w-11 h-11 rounded-full bg-cocoa text-vanilla flex items-center justify-center font-black text-lg"
+            style="font-family: &quot;Playfair Display&quot;"
+          >
+            G
+          </div>
+          <div>
+            <p
+              class="font-bold leading-none text-[18px]"
+              style="font-family: &quot;Playfair Display&quot;"
+            >
+              Golden Bake House
+            </p>
+            <p class="label text-caramel text-[9px] tracking-[0.22em]">
+              Baked With Love Since 2025
+            </p>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 label text-choc/70">
+          <a href="#story" class="hover:text-berry">Story</a>
+          <a href="#menu" class="hover:text-berry">Menu</a>
+          <a href="#custom" class="hover:text-berry">Custom Cakes</a>
+          <a href="#gallery" class="hover:text-berry">Gallery</a>
+          <a href="#reviews" class="hover:text-berry">Reviews</a>
+          <a href="#visit" class="hover:text-berry">Visit</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a
+            href="https://www.instagram.com/goldenbakehouse_spl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Instagram"
+            class="bg-white text-cocoa w-11 h-11 rounded-full border border-caramel/20 flex items-center justify-center hover:bg-cream transition"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              class="w-5 h-5 fill-current"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.25-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/919292988177?text=Hi%20Golden%20Bake%20House!%20I%20want%20to%20order%20🎂"
+            target="_blank"
+            class="hidden md:inline-flex bg-berry text-white px-6 py-3 rounded-full label hover:bg-choc transition"
+            >Order on WhatsApp</a
+          >
+          <a
+            href="tel:09292988177"
+            class="bg-cocoa text-vanilla w-11 h-11 rounded-full flex items-center justify-center lg:hidden"
+            >📞</a
+          >
+          <button
+            id="mobBtn"
+            class="lg:hidden w-11 h-11 rounded-full border border-caramel/20 flex items-center justify-center"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobNav"
+        class="hidden lg:hidden border-t border-caramel/10 bg-cream px-4 py-4 space-y-3 label"
+      >
+        <a href="#story" class="block">Story</a
+        ><a href="#menu" class="block">Menu</a
+        ><a href="#custom" class="block">Custom Cakes</a
+        ><a href="#gallery" class="block">Gallery</a
+        ><a href="#visit" class="block">Visit</a>
+        <a
+          href="https://wa.me/919292988177"
+          target="_blank"
+          class="block bg-berry text-white text-center py-3 rounded-full mt-2"
+          >Order on WhatsApp</a
+        >
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative overflow-hidden">
+      <div
+        class="max-w-[1280px] mx-auto px-4 md:px-6 py-10 md:py-14 grid lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center"
+      >
+        <div class="reveal in">
+          <span
+            class="inline-flex items-center gap-2 label text-caramel bg-caramel/10 border border-caramel/20 px-4 py-2 rounded-full"
+            >✦ Family Bakery — Sathupally, Telangana ✦</span
+          >
+          <!-- Content continues... -->
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
